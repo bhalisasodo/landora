@@ -8,7 +8,7 @@ export default function Footer() {
             alt="Landora mark"
             width={22}
             height={22}
-            className="h-5 w-auto object-contain text-ink"
+            className="h-5 w-auto object-contain"
           />
           <span className="font-display text-base font-medium tracking-tight text-ink">
             Landora

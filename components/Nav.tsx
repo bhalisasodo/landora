@@ -49,7 +49,7 @@ export default function Nav() {
             alt="Landora mark"
             width={28}
             height={28}
-            className="h-7 w-auto object-contain text-ink transition-transform duration-300 ease-out group-hover:scale-105"
+            className="h-7 w-auto object-contain transition-transform duration-300 ease-out group-hover:scale-105"
           />
           <span className="font-display text-2xl font-medium tracking-tight text-ink">
             Landora

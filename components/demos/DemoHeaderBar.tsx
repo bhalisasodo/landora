@@ -183,8 +183,15 @@ export default function DemoHeaderBar({ currentSlug }: DemoHeaderBarProps) {
 
             <Link
               href="/"
-              className="font-mono text-[11px] text-white/70 hover:text-white transition-colors"
+              className="flex items-center gap-1.5 font-mono text-[11px] text-white/70 hover:text-white transition-colors"
             >
+              <img
+                src="/landora-mark-reversed.svg"
+                alt="Landora"
+                width={16}
+                height={16}
+                className="h-4 w-auto object-contain"
+              />
               ← Landora
             </Link>
 
