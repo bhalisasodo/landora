@@ -92,10 +92,14 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: "/landora-mark.svg", type: "image/svg+xml" },
-      { url: "/icon.png", type: "image/png" },
+      { url: "/favicon.ico", sizes: "32x32" },
+      { url: "/icon.png", type: "image/png", sizes: "512x512" },
+      { url: "/landora-icon-dark.png", type: "image/png", sizes: "512x512" },
     ],
-    apple: "/apple-icon.png",
+    shortcut: "/favicon.ico",
+    apple: [
+      { url: "/apple-icon.png", sizes: "180x180", type: "image/png" },
+    ],
   },
 };
 

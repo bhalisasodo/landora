@@ -17,6 +17,24 @@ export default function Footer() {
         <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-ink-soft/60">
           Built in South Africa
         </p>
+        <div className="flex items-center justify-center gap-1.5 font-mono text-[11px] uppercase tracking-[0.15em] text-ink-soft/60">
+          <span>Powered by</span>
+          <a
+            href="https://launchgremlin.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 font-medium text-ink transition-colors hover:text-signal"
+          >
+            <img
+              src="/gremlin-mark-nav-currentcolor.svg"
+              alt="LaunchGremlin mark"
+              width={13}
+              height={13}
+              className="h-3 w-auto object-contain opacity-70 transition-opacity hover:opacity-100"
+            />
+            <span>LaunchGremlin</span>
+          </a>
+        </div>
       </div>
     </footer>
   );

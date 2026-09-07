@@ -5,6 +5,7 @@ const path = require("path");
 async function generateAssets() {
   const rootDir = path.join(__dirname, "..");
   const pubDir = path.join(rootDir, "public");
+  const appDir = path.join(rootDir, "app");
 
   const lightSourcePath = path.join(rootDir, "landora-icon-lightbackground.png");
   const darkSourcePath = path.join(rootDir, "landora-icon-darkbackground.png");
@@ -56,12 +57,14 @@ async function generateAssets() {
   await sharp(path.join(pubDir, "landora-icon-dark.png"))
     .resize(512, 512)
     .toFile(path.join(pubDir, "icon.png"));
-  console.log("Created public/icon.png");
+  fs.copyFileSync(path.join(pubDir, "icon.png"), path.join(appDir, "icon.png"));
+  console.log("Created public/icon.png and app/icon.png");
 
   await sharp(path.join(pubDir, "landora-icon-dark.png"))
     .resize(180, 180)
     .toFile(path.join(pubDir, "apple-icon.png"));
-  console.log("Created public/apple-icon.png");
+  fs.copyFileSync(path.join(pubDir, "apple-icon.png"), path.join(appDir, "apple-icon.png"));
+  console.log("Created public/apple-icon.png and app/apple-icon.png");
 
   await sharp(path.join(pubDir, "landora-icon-dark.png"))
     .resize(180, 180)
@@ -71,7 +74,8 @@ async function generateAssets() {
   await sharp(path.join(pubDir, "landora-icon-dark.png"))
     .resize(32, 32)
     .toFile(path.join(pubDir, "favicon.ico"));
-  console.log("Created public/favicon.ico");
+  fs.copyFileSync(path.join(pubDir, "favicon.ico"), path.join(appDir, "favicon.ico"));
+  console.log("Created public/favicon.ico and app/favicon.ico");
 
   // 3. Light squircle badge
   const lightRaw = await sharp(lightSourcePath).raw().toBuffer({ resolveWithObject: true });
