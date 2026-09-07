@@ -1,0 +1,40 @@
+<svg width="600" height="750" viewBox="0 0 600 750" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Monolithic Card Container -->
+  <rect width="600" height="750" rx="32" fill="#F8F9FA"/>
+  <rect x="1" y="1" width="598" height="748" rx="31" stroke="#E3E6EA" stroke-width="1.5"/>
+
+  <!-- Subtle Phone Status Bar -->
+  <g transform="translate(48, 48)">
+    <text x="0" y="0" font-family="'IBM Plex Mono', monospace" font-size="11" font-weight="500" fill="#0052CC" letter-spacing="2">FITNESS STUDIO • JOHANNESBURG</text>
+  </g>
+
+  <!-- Business & Single Offer Hero -->
+  <g transform="translate(48, 140)">
+    <text x="0" y="0" font-family="'Fraunces', Georgia, serif" font-size="36" font-style="italic" font-weight="500" fill="#12161A" letter-spacing="-0.5">Forge Reformer Pilates</text>
+    <text x="0" y="40" font-family="'Inter Tight', sans-serif" font-size="16" fill="#5E6C7D">The Firs, Rosebank</text>
+  </g>
+
+  <!-- Single Focused Booking Moment Box -->
+  <g transform="translate(48, 240)">
+    <rect x="0" y="0" width="504" height="240" rx="20" fill="#FFFFFF" stroke="#E3E6EA" stroke-width="1"/>
+    
+    <text x="32" y="52" font-family="'IBM Plex Mono', monospace" font-size="12" font-weight="500" fill="#5E6C7D" letter-spacing="1.5">FIRST-TIMER INTRO PASS (SAVE 50%)</text>
+    <text x="32" y="96" font-family="'Inter Tight', sans-serif" font-size="22" font-weight="600" fill="#12161A">Lunch Express Tone</text>
+    <text x="32" y="130" font-family="'Inter Tight', sans-serif" font-size="15" fill="#5E6C7D">Today at 12:15  •  R150 intro  •  2 spots left</text>
+
+    <!-- The Single Primary Target -->
+    <rect x="32" y="156" width="440" height="54" rx="27" fill="#12161A"/>
+    <text x="252" y="190" font-family="'Inter Tight', sans-serif" font-size="15" font-weight="600" fill="#FFFFFF" text-anchor="middle">Claim 12:15 Spot Today →</text>
+  </g>
+
+  <!-- Quiet Trust Reassurance -->
+  <g transform="translate(48, 540)">
+    <text x="252" y="0" font-family="'Inter Tight', sans-serif" font-size="13" fill="#5E6C7D" text-anchor="middle">Instant WhatsApp &amp; calendar invite • Free grip socks on first visit</text>
+  </g>
+
+  <!-- Product Signature Mark -->
+  <g transform="translate(48, 650)">
+    <line x1="0" y1="0" x2="504" y2="0" stroke="#E8ECF0" stroke-width="1"/>
+    <text x="0" y="36" font-family="'IBM Plex Mono', monospace" font-size="11" font-weight="500" fill="#8896A6" letter-spacing="1">BUILT BY LAUNCHGREMLIN — ONE LINK TO CLOSE</text>
+  </g>
+</svg>

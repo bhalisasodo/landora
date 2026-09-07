@@ -1,0 +1,40 @@
+<svg width="600" height="750" viewBox="0 0 600 750" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Monolithic Card Container -->
+  <rect width="600" height="750" rx="32" fill="#F8FAFC"/>
+  <rect x="1" y="1" width="598" height="748" rx="31" stroke="#E2E8F0" stroke-width="1.5"/>
+
+  <!-- Subtle Status Bar -->
+  <g transform="translate(48, 48)">
+    <text x="0" y="0" font-family="'IBM Plex Mono', monospace" font-size="11" font-weight="500" fill="#0D9488" letter-spacing="2">PHYSIOTHERAPY &amp; REHAB • JOHANNESBURG</text>
+  </g>
+
+  <!-- Business & Single Offer Hero -->
+  <g transform="translate(48, 140)">
+    <text x="0" y="0" font-family="'Fraunces', Georgia, serif" font-size="34" font-style="italic" font-weight="500" fill="#0F172A" letter-spacing="-0.5">Apex Physio &amp; Recovery</text>
+    <text x="0" y="40" font-family="'Inter Tight', sans-serif" font-size="16" fill="#64748B">The Zone @ Rosebank</text>
+  </g>
+
+  <!-- Single Focused Booking Moment Box -->
+  <g transform="translate(48, 240)">
+    <rect x="0" y="0" width="504" height="240" rx="20" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+    
+    <text x="32" y="52" font-family="'IBM Plex Mono', monospace" font-size="12" font-weight="500" fill="#64748B" letter-spacing="1.5">NEXT AVAILABLE OPENING</text>
+    <text x="32" y="96" font-family="'Inter Tight', sans-serif" font-size="22" font-weight="600" fill="#0F172A">Initial Injury Assessment</text>
+    <text x="32" y="130" font-family="'Inter Tight', sans-serif" font-size="15" fill="#64748B">60 min  •  Today at 16:30  •  R780</text>
+
+    <!-- The Single Primary Target -->
+    <rect x="32" y="156" width="440" height="54" rx="27" fill="#0D9488"/>
+    <text x="252" y="190" font-family="'Inter Tight', sans-serif" font-size="15" font-weight="600" fill="#FFFFFF" text-anchor="middle">Book Session for 16:30 →</text>
+  </g>
+
+  <!-- Quiet Trust Reassurance -->
+  <g transform="translate(48, 540)">
+    <text x="252" y="0" font-family="'Inter Tight', sans-serif" font-size="13" fill="#64748B" text-anchor="middle">Medical Aid Claimable (Discovery / Bonitas) • No paper forms</text>
+  </g>
+
+  <!-- Product Signature Mark -->
+  <g transform="translate(48, 650)">
+    <line x1="0" y1="0" x2="504" y2="0" stroke="#E2E8F0" stroke-width="1"/>
+    <text x="0" y="36" font-family="'IBM Plex Mono', monospace" font-size="11" font-weight="500" fill="#94A3B8" letter-spacing="1">BUILT BY LAUNCHGREMLIN — ONE LINK TO CLOSE</text>
+  </g>
+</svg>

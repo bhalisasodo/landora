@@ -1,0 +1,29 @@
+import Nav from "@/components/Nav";
+import Hero from "@/components/Hero";
+import Leak from "@/components/Leak";
+import Fix from "@/components/Fix";
+import Proof from "@/components/Proof";
+import Pricing from "@/components/Pricing";
+import Faq from "@/components/Faq";
+import Close from "@/components/Close";
+import Footer from "@/components/Footer";
+import GetStartedDrawer from "@/components/GetStartedDrawer";
+
+export default function Home() {
+  return (
+    <>
+      <Nav />
+      <main id="main-content">
+        <Hero />
+        <Leak />
+        <Fix />
+        <Proof />
+        <Pricing />
+        <Faq />
+      </main>
+      <Close />
+      <Footer />
+      <GetStartedDrawer />
+    </>
+  );
+}
