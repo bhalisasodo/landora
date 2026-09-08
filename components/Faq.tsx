@@ -12,7 +12,7 @@ export default function Faq() {
   };
 
   const whatsappFaqUrl = `https://wa.me/27820000000?text=${encodeURIComponent(
-    "Hi LaunchGremlin! I have a question about the R1450 single-link build."
+    "Hi LaunchGremlin! I have a question about the R1650 single-link build."
   )}`;
 
   return (

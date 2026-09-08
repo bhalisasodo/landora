@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     template: "%s | Landora",
   },
   description:
-    "You don't need a prettier website. You need one that closes. Single-link booking-first landing pages for South African service businesses. R1450 once. Live in days.",
+    "You don't need a prettier website. You need one that closes. Single-link booking-first landing pages for South African service businesses. R1650 once. Live in days.",
   keywords: [
     "landing page South Africa",
     "booking website South Africa",
@@ -73,7 +73,7 @@ export const metadata: Metadata = {
     siteName: "Landora",
     title: "Landora — One link that turns lookers into bookers.",
     description:
-      "You don't need a prettier website. You need one that closes. Single-link booking-first landing pages for South African service businesses. R1450 once.",
+      "You don't need a prettier website. You need one that closes. Single-link booking-first landing pages for South African service businesses. R1650 once.",
     images: [
       {
         url: "/og-image.jpg",
@@ -87,7 +87,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Landora — One link that turns lookers into bookers.",
     description:
-      "You don't need a prettier website. You need one that closes. Single-link booking-first landing pages for South African service businesses. R1450 once.",
+      "You don't need a prettier website. You need one that closes. Single-link booking-first landing pages for South African service businesses. R1650 once.",
     images: ["/og-image.jpg"],
   },
   icons: {
@@ -112,7 +112,7 @@ const jsonLd = {
   image: "https://landora.launchgremlin.com/og-image.jpg",
   description:
     "Booking-first landing pages for South African service businesses. One focused link that turns lookers into bookers.",
-  priceRange: "R1450",
+  priceRange: "R1650",
   address: {
     "@type": "PostalAddress",
     addressCountry: "ZA",
@@ -129,7 +129,7 @@ const jsonLd = {
       {
         "@type": "Offer",
         name: "Single-Link Conversion Build",
-        price: "1450",
+        price: "1650",
         priceCurrency: "ZAR",
         priceValidUntil: "2026-12-31",
         availability: "https://schema.org/InStock",

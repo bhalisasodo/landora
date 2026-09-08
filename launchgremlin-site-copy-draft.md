@@ -9,7 +9,7 @@ One link that turns lookers into bookers.
 You don't need a prettier website. You need one that closes.
 
 **CTAs:**
-- Primary: Get Started — R1450 once
+- Primary: Get Started — R1650 once
 - Secondary: View all demos
 
 ---
@@ -83,7 +83,7 @@ Built for South African businesses. Priced in Rand. No retainers, no surprises.
 One Price. No Catch.
 
 **Body:**
-R1450, once. Not a subscription. Not "starting at." Just the price.
+R1650, once. Not a subscription. Not "starting at." Just the price.
 
 **What's included (short list, 3–4 items max):**
 - A booking-first landing page, built for your business
@@ -104,4 +104,4 @@ Get Started
 Stop being polite. Start getting booked.
 
 **CTA:**
-Get Started — R1450 once
+Get Started — R1650 once

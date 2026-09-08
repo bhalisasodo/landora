@@ -202,7 +202,7 @@ export default function DemosIndex() {
             Want one built for your business?
           </h3>
           <p className="mt-4 text-base text-ink-soft">
-            R1450 once. Live in days, not months.
+            R1650 once. Live in days, not months.
           </p>
           <div className="mt-8">
             <MagneticPill

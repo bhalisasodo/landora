@@ -41,7 +41,7 @@ export function getWhatsAppUrl(details?: {
 export const hero = {
   headline: "One link that turns lookers into bookers.",
   subhead: "You don't need a prettier website. You need one that closes.",
-  primaryCta: "Get Started — R1450 once",
+  primaryCta: "Get Started — R1650 once",
   secondaryCta: "View all demos",
 };
 
@@ -123,13 +123,13 @@ export const proofSection = {
   body:
     "We're not going to invent a glowing review from a business that doesn't exist. Instead — here's the actual product. Real layouts, built for real bookings.",
   foundingCallout:
-    "Founding clients get 50% off (R725 once) for being early — limited to the first 5 businesses. Once initial case studies land, standard R1450 pricing applies.",
+    "Founding clients get 50% off (R825 once) for being early — limited to the first 5 businesses. Once initial case studies land, standard R1650 pricing applies.",
   trustLine: "Built for South African businesses. Priced in Rand. No retainers, no surprises.",
 };
 
 export const pricingSection = {
   eyebrow: "One price. No catch.",
-  body: "R1450, once. Not a subscription. Not “starting at.” Just the price.",
+  body: "R1650, once. Not a subscription. Not “starting at.” Just the price.",
   includes: [
     "A booking-first landing page, built for your business",
     "Mobile-first design (because that's where your customers are)",
@@ -145,7 +145,7 @@ export const faqSection = {
     {
       question: "Are there any monthly subscription fees or hidden retainers?",
       answer:
-        "None. R1450 is a once-off build fee. You own your page entirely. Standard domain and hosting is either hosted on your existing South African host or setup with zero markup (~R80–R120/mo).",
+        "None. R1650 is a once-off build fee. You own your page entirely. Standard domain and hosting is either hosted on your existing South African host or setup with zero markup (~R80–R120/mo).",
     },
     {
       question: "How do bookings actually reach my phone?",
@@ -177,5 +177,5 @@ export const faqSection = {
 
 export const closeSection = {
   headline: "Stop being polite. Start getting booked.",
-  cta: "Get Started — R1450 once",
+  cta: "Get Started — R1650 once",
 };

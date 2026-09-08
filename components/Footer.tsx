@@ -23,14 +23,14 @@ export default function Footer() {
             href="https://launchgremlin.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 font-medium text-ink transition-colors hover:text-signal"
+            className="group inline-flex items-center gap-1.5 font-medium text-ink transition-colors hover:text-signal"
           >
             <img
-              src="/gremlin-mark-nav-currentcolor.svg"
+              src="/gremlin-icon-full-currentcolor.svg"
               alt="LaunchGremlin mark"
-              width={13}
-              height={13}
-              className="h-3 w-auto object-contain opacity-70 transition-opacity hover:opacity-100"
+              width={17}
+              height={12}
+              className="h-3 w-auto object-contain opacity-70 transition-opacity group-hover:opacity-100"
             />
             <span>LaunchGremlin</span>
           </a>

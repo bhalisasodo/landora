@@ -10,7 +10,7 @@ interface CountUpPriceProps {
 }
 
 export default function CountUpPrice({
-  target = 1450,
+  target = 1650,
   prefix = "R",
   className = "",
   duration = 1200,

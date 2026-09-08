@@ -126,7 +126,7 @@ export default function GetStartedDrawer() {
           {/* Pricing Highlight Pill */}
           <div className="mt-6 flex items-center justify-between rounded-2xl bg-signal-soft/50 border border-signal/20 px-5 py-3 text-xs">
             <span className="font-medium text-ink">Single-Link Build</span>
-            <span className="font-mono font-bold text-signal">R1450 once</span>
+            <span className="font-mono font-bold text-signal">R1650 once</span>
           </div>
 
           <form onSubmit={handleSubmit} className="mt-8 space-y-5">

@@ -199,7 +199,7 @@ export default function DemoHeaderBar({ currentSlug }: DemoHeaderBarProps) {
               href="/#get-started"
               className="hidden sm:inline-block rounded-full bg-signal px-3.5 py-1 text-[11px] font-semibold text-cream shadow-xs transition-transform duration-200 hover:scale-105"
             >
-              Get this for R1450
+              Get this for R1650
             </Link>
           </div>
         </div>
@@ -257,7 +257,7 @@ export default function DemoHeaderBar({ currentSlug }: DemoHeaderBarProps) {
 
             <div className="mt-8 flex flex-col sm:flex-row items-center justify-between gap-3 border-t border-white/10 pt-5">
               <span className="font-mono text-xs text-white/60">
-                Live build price: <strong>R1450 once</strong>
+                Live build price: <strong>R1650 once</strong>
               </span>
               <div className="flex items-center gap-2 w-full sm:w-auto">
                 <button

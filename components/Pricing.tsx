@@ -27,7 +27,7 @@ export default function Pricing() {
       {/* Hero Price Number: Dominant, Monumental, Precision Animated */}
       <ScrollReveal delay={120} className="mt-8">
         <div className="font-display text-6xl font-medium tracking-tight text-ink sm:text-7xl md:text-8xl lg:text-[5.75rem]">
-          <CountUpPrice target={1450} prefix="R" />
+          <CountUpPrice target={1650} prefix="R" />
         </div>
         <p className="mt-4 text-lg font-normal text-ink-soft sm:text-xl">
           once. Not a subscription. Not &ldquo;starting at.&rdquo; Just the price.

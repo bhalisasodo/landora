@@ -68,7 +68,7 @@ supposed to convert.
 - [x] Real demo mockups/pages for each industry (`public/demos/` & `/demos/*`)
 - [x] WhatsApp routing configured to official line `076 896 5502` (`lib/copy.ts`)
 - [x] Staging domain mapped to `https://landora.launchgremlin.com`
-- [x] Founding-client discount amount set to 50% off (R725 once, `lib/copy.ts`)
+- [x] Founding-client discount amount set to 50% off (R825 once, `lib/copy.ts`)
 - [ ] Swap the pre-launch Proof section for real case studies once available post-launch
 
 ## Brand reference
