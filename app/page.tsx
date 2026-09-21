@@ -1,7 +1,8 @@
 import Nav from "@/components/Nav";
 import Hero from "@/components/Hero";
 import Leak from "@/components/Leak";
-import Fix from "@/components/Fix";
+import Audit from "@/components/Audit";
+import Services from "@/components/Services";
 import Proof from "@/components/Proof";
 import Pricing from "@/components/Pricing";
 import Faq from "@/components/Faq";
@@ -16,7 +17,8 @@ export default function Home() {
       <main id="main-content">
         <Hero />
         <Leak />
-        <Fix />
+        <Audit />
+        <Services />
         <Proof />
         <Pricing />
         <Faq />

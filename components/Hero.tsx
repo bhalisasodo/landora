@@ -22,8 +22,9 @@ export default function Hero() {
         {/* Step 1: Headline lands first with 400ms duration */}
         <ScrollReveal delay={60} duration={400} offset={16}>
           <h1 className="font-display text-[2.75rem] font-medium italic leading-[1.06] tracking-tight text-ink sm:text-6xl md:text-7xl lg:text-[5.15rem]">
-            One link that turns <span className="leak-mark">lookers</span> into
-            bookers.
+            We find what's <span className="leak-mark">leaking</span> in your funnel.
+            Then fix it.
+
           </h1>
         </ScrollReveal>
 

@@ -9,53 +9,43 @@ import MagneticPill from "@/components/motion/MagneticPill";
 import GetStartedDrawer from "@/components/GetStartedDrawer";
 
 const demoFeatureTags: Record<string, string[]> = {
-  "spa-wellness": [
-    "Instant Treatment & Add-on Pricing",
-    "Real-Time Slot Picker",
-    "Pre-filled WhatsApp Brief",
-  ],
   "restaurant-cafe": [
-    "No Annoying PDF Menus",
-    "Seating & Party Size Selectors",
-    "Zero-Deposit Instant Confirmation",
+    "Zero-Deposit Instant Table Claims",
+    "No Clunky PDF Menu Downloads",
+    "Pre-filled WhatsApp Booking Desk",
   ],
   "fitness-studio": [
-    "Live Daily Schedule & Spot Counters",
-    "First-Timer Intro Pass (Save 50%)",
-    "Direct WhatsApp Spot Claim",
+    "High-Conversion Website Architecture",
+    "Coach Authority & Live Class Schedule",
+    "Instant 7-Day Intro Pass Funnel",
   ],
   "barber-studio": [
-    "Chair & Stylist Selection",
-    "Transparent Grooming Menu",
-    "Instant Chair Lock via WhatsApp",
-  ],
-  "physio-recovery": [
-    "Medical Aid Claimable Rates",
-    "Injury / Focus Area Screener",
-    "Direct Consultation Lock",
+    "Dedicated Paid Ad Campaign Offer Stack",
+    "35% First-Timer Discount & Scarcity Counter",
+    "Instant #PROMO Voucher Lock via WhatsApp",
   ],
 };
 
 const comparisonItems = [
   {
-    feature: "Time to First Action",
-    traditional: "3–6 clicks across multiple subpages",
-    landora: "Instant — offer & slots on screen",
+    feature: "Time to Conversion Action",
+    traditional: "3–6 clicks buried under 'About Us' and PDFs",
+    landora: "Instant — offer, schedule, or table lock on-screen",
   },
   {
-    feature: "Mobile Experience",
-    traditional: "Desktop-first layout squeezed onto phones",
-    landora: "100% mobile-native with sticky action bar",
+    feature: "Paid Ad Traffic Destination",
+    traditional: "Clicks bounce off generic homepage (Ghost Traffic)",
+    landora: "Dedicated promo funnels with urgency & voucher codes",
   },
   {
-    feature: "Lead Delivery",
-    traditional: "Contact form sent to unmonitored inbox",
-    landora: "Pre-filled WhatsApp brief straight to your phone",
+    feature: "Mobile Lead Delivery",
+    traditional: "Contact form sent to unmonitored inbox (Cold Trail)",
+    landora: "Direct, pre-filled WhatsApp handoff straight to your phone",
   },
   {
-    feature: "Menu / Price Access",
-    traditional: "Pinch-and-zoom PDF download",
-    landora: "Interactive transparent ZAR pricing",
+    feature: "Pricing & Service Transparency",
+    traditional: "Pinch-and-zoom PDFs or vague 'enquire for price'",
+    landora: "Interactive transparent ZAR rates and tier breakdowns",
   },
 ];
 
@@ -74,14 +64,13 @@ export default function DemosIndex() {
         {/* Header Hero */}
         <ScrollReveal className="text-center max-w-3xl mx-auto">
           <p className="font-mono text-xs font-medium uppercase tracking-[0.25em] text-signal">
-            Live Landing Page Demos
+            Live Conversion Archetypes
           </p>
           <h1 className="mt-6 font-display text-4xl italic tracking-tight sm:text-5xl md:text-6xl text-ink">
-            Real layouts, built for real bookings.
+            Real layouts, built to plug real leaks.
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-ink-soft sm:text-xl leading-relaxed">
-            No 5-page brochures. No dead ends. Explore live, bookable landing
-            pages built for South African service businesses.
+            Explore 3 live, bookable conversion engines built for South African service businesses. Each demo showcases how Landora solves specific drop-off leaks.
           </p>
         </ScrollReveal>
 
@@ -114,6 +103,9 @@ export default function DemosIndex() {
                   </Link>
 
                   <div className="mt-6">
+                    <div className="inline-block rounded-full bg-signal-soft/70 border border-signal/20 px-3 py-1 font-mono text-[10px] font-semibold uppercase tracking-wider text-signal mb-2.5">
+                      {ind.archetype}
+                    </div>
                     <h2 className="font-display text-2xl font-medium tracking-tight text-ink">
                       {ind.label}
                     </h2>
@@ -157,17 +149,17 @@ export default function DemosIndex() {
           })}
         </div>
 
-        {/* Why Single-Link Beats Multi-Page Comparison Table */}
+        {/* The Architecture Comparison Table */}
         <ScrollReveal delay={150} className="mt-36 rounded-3xl border border-line bg-white/70 p-8 sm:p-12 shadow-xs">
           <div className="text-center max-w-2xl mx-auto">
             <p className="font-mono text-xs font-medium uppercase tracking-[0.25em] text-signal">
               The Architecture Comparison
             </p>
             <h2 className="mt-3 font-display text-3xl italic tracking-tight sm:text-4xl text-ink">
-              Traditional Website vs. Landora
+              Traditional Website vs. Landora Archetypes
             </h2>
             <p className="mt-3 text-sm text-ink-soft leading-relaxed">
-              Why businesses lose 60%+ of their ad and social traffic to navigation fatigue.
+              Why businesses lose 60%+ of their ad and social traffic to navigation fatigue and enquiry black holes.
             </p>
           </div>
 
@@ -177,7 +169,7 @@ export default function DemosIndex() {
                 <tr className="border-b border-line text-xs font-mono uppercase tracking-wider text-ink-soft">
                   <th className="py-4 pr-4">Dimension</th>
                   <th className="py-4 px-4 text-ink-soft/70">Traditional 5-Page Site</th>
-                  <th className="py-4 pl-4 text-signal font-bold">Landora Single Link</th>
+                  <th className="py-4 pl-4 text-signal font-bold">Landora Conversion Archetypes</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-line/60">
@@ -199,10 +191,10 @@ export default function DemosIndex() {
           className="mt-32 rounded-3xl bg-cream-dim/50 p-12 text-center sm:p-16"
         >
           <h3 className="font-display text-3xl italic sm:text-4xl text-ink">
-            Want one built for your business?
+            Need a site or campaign that actually closes?
           </h3>
-          <p className="mt-4 text-base text-ink-soft">
-            R1650 once. Live in days, not months.
+          <p className="mt-4 text-base text-ink-soft max-w-xl mx-auto">
+            Our diagnostic leak audit is completely free. We identify your drop-off points, then deploy the exact conversion architecture.
           </p>
           <div className="mt-8">
             <MagneticPill
@@ -210,7 +202,7 @@ export default function DemosIndex() {
               onClick={handleOpenDrawer}
               className="inline-block rounded-full bg-ink px-10 py-4 text-sm font-semibold tracking-tight text-cream shadow-xs transition-all duration-300 hover:bg-ink-soft hover:shadow-md cursor-pointer"
             >
-              Get Started
+              Request Free Leak Audit
             </MagneticPill>
           </div>
         </ScrollReveal>

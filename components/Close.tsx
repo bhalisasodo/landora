@@ -8,7 +8,11 @@ export default function Close() {
   const handleGetStarted = (e: React.MouseEvent) => {
     e.preventDefault();
     if (typeof window !== "undefined") {
-      window.dispatchEvent(new CustomEvent("open-get-started"));
+      window.dispatchEvent(
+        new CustomEvent("open-get-started", {
+          detail: { focus: "Leak Audit" },
+        })
+      );
     }
   };
 
@@ -23,7 +27,7 @@ export default function Close() {
 
         <ScrollReveal delay={150} className="mt-14">
           <MagneticPill
-            href={getWhatsAppUrl()}
+            href={getWhatsAppUrl({ leakFocus: "Leak Audit" })}
             onClick={handleGetStarted}
             className="inline-block rounded-full bg-signal px-10 py-4 text-sm font-semibold tracking-tight text-cream shadow-xs transition-all duration-300 ease-out hover:brightness-110 cursor-pointer"
           >

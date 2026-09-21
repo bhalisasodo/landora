@@ -1,24 +1,38 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { getWhatsAppUrl } from "@/lib/copy";
+import { getWhatsAppUrl, pricingSection } from "@/lib/copy";
 
-const categories = [
-  { id: "spa", label: "Spa & Wellness" },
-  { id: "restaurant", label: "Restaurant & Cafe" },
-  { id: "fitness", label: "Fitness Studio" },
-  { id: "other", label: "Other Local Service" },
+const leakOptions = [
+  { id: "all", label: "Full Pipeline / Not Sure" },
+  { id: "website", label: "Website (Dead End)" },
+  { id: "ads", label: "Paid Ads (Ghost Traffic)" },
+  { id: "seo", label: "Organic Search (Buried Alive)" },
+  { id: "retention", label: "Retention (Cold Trail)" },
 ];
 
 export default function GetStartedDrawer() {
   const [isOpen, setIsOpen] = useState(false);
   const [name, setName] = useState("");
   const [businessName, setBusinessName] = useState("");
-  const [industry, setIndustry] = useState(categories[0].label);
+  const [leakFocus, setLeakFocus] = useState(leakOptions[0].label);
   const [phone, setPhone] = useState("");
+  const [url, setUrl] = useState("");
 
   useEffect(() => {
-    const handleOpen = () => setIsOpen(true);
+    const handleOpen = (e: Event) => {
+      const customEvent = e as CustomEvent<{ focus?: string }>;
+      if (customEvent.detail?.focus) {
+        const matching = leakOptions.find((opt) =>
+          customEvent.detail?.focus?.toLowerCase().includes(opt.id)
+        );
+        if (matching) {
+          setLeakFocus(matching.label);
+        }
+      }
+      setIsOpen(true);
+    };
+
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === "Escape") setIsOpen(false);
     };
@@ -56,13 +70,14 @@ export default function GetStartedDrawer() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const url = getWhatsAppUrl({
+    const whatsappUrl = getWhatsAppUrl({
       name,
       businessName,
-      industry,
+      leakFocus,
       phone,
+      url,
     });
-    window.open(url, "_blank", "noopener,noreferrer");
+    window.open(whatsappUrl, "_blank", "noopener,noreferrer");
     setIsOpen(false);
   };
 
@@ -88,13 +103,13 @@ export default function GetStartedDrawer() {
           <div className="flex items-start justify-between">
             <div>
               <p className="font-mono text-xs font-medium uppercase tracking-[0.25em] text-signal">
-                One Link • Built to Close
+                Landora Studio • Step 01
               </p>
               <h2
                 id="drawer-title"
                 className="mt-3 font-display text-3xl font-medium italic text-ink sm:text-4xl"
               >
-                Get Started
+                Request a Leak Audit
               </h2>
             </div>
             <button
@@ -120,36 +135,36 @@ export default function GetStartedDrawer() {
           </div>
 
           <p className="mt-4 text-sm leading-relaxed text-ink-soft">
-            Tell us about your business. We&apos;ll open a direct WhatsApp chat with your brief ready to go.
+            Tell us about your business. We&apos;ll diagnose where your revenue is leaking across your website, ads, search, and social before anything gets built or bought.
           </p>
 
           {/* Pricing Highlight Pill */}
           <div className="mt-6 flex items-center justify-between rounded-2xl bg-signal-soft/50 border border-signal/20 px-5 py-3 text-xs">
-            <span className="font-medium text-ink">Single-Link Build</span>
-            <span className="font-mono font-bold text-signal">R1650 once</span>
+            <span className="font-medium text-ink">Diagnostic Leak Audit</span>
+            <span className="font-mono font-bold text-signal">100% Free • Fixes from R1650</span>
           </div>
 
-          <form onSubmit={handleSubmit} className="mt-8 space-y-5">
-            {/* Category Selection */}
+          <form onSubmit={handleSubmit} className="mt-7 space-y-4">
+            {/* Suspected Leak Area */}
             <div>
               <label className="block font-mono text-xs font-semibold uppercase tracking-wider text-ink-soft">
-                Business Category
+                Where do you suspect you&apos;re leaking?
               </label>
-              <div className="mt-2.5 grid grid-cols-2 gap-2">
-                {categories.map((cat) => {
-                  const isSelected = industry === cat.label;
+              <div className="mt-2 grid grid-cols-1 gap-1.5 sm:grid-cols-2">
+                {leakOptions.map((opt) => {
+                  const isSelected = leakFocus === opt.label;
                   return (
                     <button
-                      key={cat.id}
+                      key={opt.id}
                       type="button"
-                      onClick={() => setIndustry(cat.label)}
-                      className={`rounded-xl border py-2.5 px-3 text-center text-xs transition-all duration-200 cursor-pointer ${
+                      onClick={() => setLeakFocus(opt.label)}
+                      className={`rounded-xl border py-2.5 px-3 text-left text-xs transition-all duration-200 cursor-pointer ${
                         isSelected
-                          ? "border-signal bg-signal text-cream font-medium shadow-xs scale-[1.02]"
+                          ? "border-signal bg-signal text-cream font-medium shadow-xs"
                           : "border-line bg-white/70 text-ink hover:border-ink/30"
                       }`}
                     >
-                      {cat.label}
+                      {opt.label}
                     </button>
                   );
                 })}
@@ -168,10 +183,10 @@ export default function GetStartedDrawer() {
                 id="drawer-biz-name"
                 type="text"
                 required
-                placeholder="e.g. Cape Roastery"
+                placeholder="e.g. Cape Roastery / Apex Physio"
                 value={businessName}
                 onChange={(e) => setBusinessName(e.target.value)}
-                className="mt-2 w-full rounded-xl border border-line bg-white px-4 py-3 text-sm text-ink placeholder:text-ink-soft/40 transition-shadow focus:border-signal focus:ring-2 focus:ring-signal/20 focus:outline-none"
+                className="mt-1.5 w-full rounded-xl border border-line bg-white px-4 py-3 text-sm text-ink placeholder:text-ink-soft/40 transition-shadow focus:border-signal focus:ring-2 focus:ring-signal/20 focus:outline-none"
               />
             </div>
 
@@ -191,7 +206,7 @@ export default function GetStartedDrawer() {
                 placeholder="e.g. Thabo Mthembu"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                className="mt-2 w-full rounded-xl border border-line bg-white px-4 py-3 text-sm text-ink placeholder:text-ink-soft/40 transition-shadow focus:border-signal focus:ring-2 focus:ring-signal/20 focus:outline-none"
+                className="mt-1.5 w-full rounded-xl border border-line bg-white px-4 py-3 text-sm text-ink placeholder:text-ink-soft/40 transition-shadow focus:border-signal focus:ring-2 focus:ring-signal/20 focus:outline-none"
               />
             </div>
 
@@ -211,16 +226,34 @@ export default function GetStartedDrawer() {
                 placeholder="e.g. 082 345 6789"
                 value={phone}
                 onChange={(e) => setPhone(e.target.value)}
-                className="mt-2 w-full rounded-xl border border-line bg-white px-4 py-3 text-sm text-ink placeholder:text-ink-soft/40 transition-shadow focus:border-signal focus:ring-2 focus:ring-signal/20 focus:outline-none"
+                className="mt-1.5 w-full rounded-xl border border-line bg-white px-4 py-3 text-sm text-ink placeholder:text-ink-soft/40 transition-shadow focus:border-signal focus:ring-2 focus:ring-signal/20 focus:outline-none"
               />
             </div>
 
-            <div className="pt-3">
+            {/* Current Website or Instagram */}
+            <div>
+              <label
+                htmlFor="drawer-url"
+                className="block font-mono text-xs font-semibold uppercase tracking-wider text-ink-soft"
+              >
+                Current Website or Instagram <span className="font-normal lowercase opacity-70">(optional)</span>
+              </label>
+              <input
+                id="drawer-url"
+                type="text"
+                placeholder="e.g. instagram.com/mybrand or yoursite.co.za"
+                value={url}
+                onChange={(e) => setUrl(e.target.value)}
+                className="mt-1.5 w-full rounded-xl border border-line bg-white px-4 py-3 text-sm text-ink placeholder:text-ink-soft/40 transition-shadow focus:border-signal focus:ring-2 focus:ring-signal/20 focus:outline-none"
+              />
+            </div>
+
+            <div className="pt-2">
               <button
                 type="submit"
                 className="w-full rounded-full bg-ink py-4 text-sm font-semibold tracking-tight text-cream shadow-xs transition-all duration-300 hover:bg-ink-soft hover:shadow-md active:scale-[0.99] cursor-pointer"
               >
-                Send Brief via WhatsApp →
+                Request Free Leak Audit via WhatsApp →
               </button>
             </div>
           </form>
@@ -229,7 +262,7 @@ export default function GetStartedDrawer() {
         {/* Footer info */}
         <div className="mt-8 border-t border-line/60 pt-6 text-center">
           <p className="font-mono text-xs text-ink-soft/70">
-            Priced in Rand (ZAR) • Built &amp; supported in South Africa
+            Priced in Rand (ZAR) • 100% free diagnostic audit • Fixes start from R1650
           </p>
         </div>
       </div>

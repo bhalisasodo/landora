@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { faqSection } from "@/lib/copy";
+import { faqSection, contactConfig } from "@/lib/copy";
 import ScrollReveal from "@/components/motion/ScrollReveal";
 
 export default function Faq() {
@@ -11,8 +11,8 @@ export default function Faq() {
     setOpenIndex((prev) => (prev === index ? null : index));
   };
 
-  const whatsappFaqUrl = `https://wa.me/27820000000?text=${encodeURIComponent(
-    "Hi LaunchGremlin! I have a question about the R1650 single-link build."
+  const whatsappFaqUrl = `${contactConfig.whatsappBaseUrl}?text=${encodeURIComponent(
+    "Hi Landora! I have a question about the Leak Audit and studio fixes."
   )}`;
 
   return (
@@ -75,7 +75,7 @@ export default function Faq() {
       <ScrollReveal delay={300} className="mt-12 text-center">
         <div className="inline-flex flex-col sm:flex-row items-center gap-3 rounded-2xl bg-signal-soft/40 border border-signal/20 px-6 py-4">
           <span className="text-xs text-ink-soft">
-            Still have a specific question about your industry?
+            Have a specific question about your sales funnel?
           </span>
           <a
             href={whatsappFaqUrl}

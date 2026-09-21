@@ -6,72 +6,52 @@ import { usePathname } from "next/navigation";
 
 interface DemoHeaderBarProps {
   currentSlug:
-    | "spa-wellness"
     | "restaurant-cafe"
     | "fitness-studio"
-    | "barber-studio"
-    | "physio-recovery";
+    | "barber-studio";
 }
 
 const demoOptions = [
   {
-    slug: "spa-wellness",
-    title: "Spa & Wellness",
-    niche: "Aura Botanica Spa",
-    accent: "#1F6F4C",
-    accentBg: "#EBF5EE",
-    whyItConverts: [
-      "Treatment cards clearly present duration & ZAR price up front — zero hidden fees.",
-      "Real-time slot picker lets visitors claim today's quiet hour in 2 taps.",
-      "WhatsApp handoff creates an instant direct conversation with zero lost leads.",
-    ],
-  },
-  {
     slug: "restaurant-cafe",
     title: "Restaurant & Cafe",
+    archetype: "Booking-First Landing Page",
     niche: "Table 9 Bistro",
     accent: "#D8A76B",
     accentBg: "#332D24",
+    studioFix: "Websites (The Dead End Fix)",
     whyItConverts: [
-      "Replaces annoying PDF menu downloads with instant table & time slot selection.",
-      "Zero deposit required removes friction during high-intent dinner browsing.",
-      "Instant WhatsApp table confirmation guarantees high attendance rates.",
+      "Replaces annoying PDF menu downloads with instant party size & dinner time slot selection.",
+      "Zero deposit required removes friction during high-intent dining and reservation browsing.",
+      "Instant WhatsApp table confirmation guarantees high attendance rates with direct chat handoff.",
     ],
   },
   {
     slug: "fitness-studio",
-    title: "Fitness Studio",
-    niche: "Forge Pilates",
+    title: "Fitness Studio / Gym",
+    archetype: "High-Conversion Website",
+    niche: "Forge Reformer Pilates",
     accent: "#0066FF",
     accentBg: "#EBF2FF",
+    studioFix: "Websites & Conversion Architecture",
     whyItConverts: [
-      "Real-time spot counter creates genuine urgency (e.g. '2 spots left').",
-      "One-click intro trial pass offer lowers barrier to entry for first-timers.",
-      "Eliminates slow 'enquiry forms' that make prospects wait 24 hours for a callback.",
+      "Multi-section website structure builds brand prestige, coach credentials, and studio tour clarity.",
+      "Transparent ZAR membership tiers & intro week pass eliminates slow 'enquiry form' drop-offs.",
+      "Low-friction 7-day trial pass lead capture routes high-intent prospects directly into WhatsApp.",
     ],
   },
   {
     slug: "barber-studio",
     title: "Barber & Grooming Club",
+    archetype: "Paid Ad Campaign Funnel",
     niche: "The District Barber Club",
     accent: "#C27803",
     accentBg: "#FEF08A",
+    studioFix: "Paid Acquisition (The Ghost Traffic Fix)",
     whyItConverts: [
-      "Barber selection lets clients pick their trusted stylist or grab the first chair.",
-      "Tactile service menu with combo add-ons boosts average booking value.",
-      "Zero phone tag on Instagram DMs — straight into a pre-filled WhatsApp confirmation.",
-    ],
-  },
-  {
-    slug: "physio-recovery",
-    title: "Physio & Recovery",
-    niche: "Apex Physio & Rehab",
-    accent: "#0D9488",
-    accentBg: "#CCFBF1",
-    whyItConverts: [
-      "Medical Aid Claimable badge establishes immediate clinical trust.",
-      "Targeted injury/focus area selector helps practitioners prepare before the consult.",
-      "Replaces 3-page PDF intake forms with a frictionless 2-minute appointment lock.",
+      "Dedicated Meta & Google ad promo page prevents paid traffic from bouncing off an unoptimized homepage.",
+      "Compelling introductory offer (Save 35% on First Cut + Beard Sculpt) with real weekly chair limits.",
+      "Instant voucher code generator routes directly into WhatsApp for rapid chair reservation.",
     ],
   },
 ];
@@ -120,7 +100,7 @@ export default function DemoHeaderBar({ currentSlug }: DemoHeaderBarProps) {
                   />
                   <div className="absolute left-0 mt-2 z-50 w-60 rounded-2xl border border-white/15 bg-[#171A1E] p-2 shadow-2xl backdrop-blur-xl">
                     <div className="px-3 py-1.5 text-[10px] font-mono uppercase tracking-wider text-white/50">
-                      Switch Industry Demo
+                      Switch Live Demo
                     </div>
                     {demoOptions.map((item) => {
                       const isCurrent = item.slug === currentSlug;
@@ -137,7 +117,7 @@ export default function DemoHeaderBar({ currentSlug }: DemoHeaderBarProps) {
                         >
                           <div>
                             <p>{item.title}</p>
-                            <p className="text-[10px] text-white/50">{item.niche}</p>
+                            <p className="text-[10px] text-white/50">{item.archetype}</p>
                           </div>
                           {isCurrent && (
                             <span className="font-mono text-[10px] text-signal font-bold">
@@ -199,7 +179,7 @@ export default function DemoHeaderBar({ currentSlug }: DemoHeaderBarProps) {
               href="/#get-started"
               className="hidden sm:inline-block rounded-full bg-signal px-3.5 py-1 text-[11px] font-semibold text-cream shadow-xs transition-transform duration-200 hover:scale-105"
             >
-              Get this for R1650
+              Request Audit
             </Link>
           </div>
         </div>
@@ -257,7 +237,7 @@ export default function DemoHeaderBar({ currentSlug }: DemoHeaderBarProps) {
 
             <div className="mt-8 flex flex-col sm:flex-row items-center justify-between gap-3 border-t border-white/10 pt-5">
               <span className="font-mono text-xs text-white/60">
-                Live build price: <strong>R1650 once</strong>
+                Studio Fix: <strong>Websites &amp; Landing Pages</strong>
               </span>
               <div className="flex items-center gap-2 w-full sm:w-auto">
                 <button
@@ -272,7 +252,7 @@ export default function DemoHeaderBar({ currentSlug }: DemoHeaderBarProps) {
                   onClick={() => setShowInsights(false)}
                   className="flex-1 sm:flex-none rounded-full bg-signal px-5 py-2 text-xs font-semibold text-cream text-center shadow-xs hover:brightness-110"
                 >
-                  Claim My Page →
+                  Request Audit →
                 </Link>
               </div>
             </div>

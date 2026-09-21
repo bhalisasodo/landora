@@ -95,6 +95,9 @@ export default function RestaurantCafeDemo() {
           
           {/* Service details */}
           <div className="mt-4 flex flex-wrap items-center justify-center gap-2 font-mono text-xs text-[#9E9585]">
+            <span className="rounded-full bg-[#332D24] border border-[#D8A76B]/40 px-3 py-1 font-semibold text-[#D8A76B]">
+              Archetype: Booking-First Landing Page
+            </span>
             <span className="rounded-full bg-[#14120F] border border-[#2C2822] px-3 py-1 text-[#D8A76B]">
               Dinner: Tue–Sun from 17:30
             </span>

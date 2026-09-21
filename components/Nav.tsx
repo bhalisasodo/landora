@@ -18,7 +18,11 @@ export default function Nav() {
 
   const openDrawer = () => {
     if (typeof window !== "undefined") {
-      window.dispatchEvent(new CustomEvent("open-get-started"));
+      window.dispatchEvent(
+        new CustomEvent("open-get-started", {
+          detail: { focus: "Leak Audit" },
+        })
+      );
     }
   };
 
@@ -56,19 +60,31 @@ export default function Nav() {
           </span>
         </Link>
 
-        <nav className="flex items-center gap-6 sm:gap-8">
+        <nav className="flex items-center gap-5 sm:gap-7">
+          <Link
+            href="#audit"
+            className="hidden font-mono text-xs font-medium uppercase tracking-[0.15em] text-ink-soft/80 transition-colors duration-300 hover:text-ink md:inline-block"
+          >
+            The Audit
+          </Link>
+          <Link
+            href="#services"
+            className="hidden font-mono text-xs font-medium uppercase tracking-[0.15em] text-ink-soft/80 transition-colors duration-300 hover:text-ink sm:inline-block"
+          >
+            Services
+          </Link>
           <Link
             href="/demos"
             className="hidden font-mono text-xs font-medium uppercase tracking-[0.15em] text-ink-soft/80 transition-colors duration-300 hover:text-ink sm:inline-block"
           >
-            Live Demos
+            Demos
           </Link>
           <button
             type="button"
             onClick={openDrawer}
             className="rounded-full border border-ink/80 px-5 py-2 text-xs font-semibold tracking-tight text-ink transition-all duration-300 ease-out hover:bg-ink hover:text-cream cursor-pointer"
           >
-            Get Started
+            Request Audit
           </button>
         </nav>
       </div>

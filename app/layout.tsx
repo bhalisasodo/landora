@@ -31,27 +31,26 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL("https://landora.launchgremlin.com"),
   title: {
-    default: "Landora — One link that turns lookers into bookers.",
-    template: "%s | Landora",
+    default: "Landora Studio — We find where you're leaking. Then we fix it.",
+    template: "%s | Landora Studio",
   },
   description:
-    "You don't need a prettier website. You need one that closes. Single-link booking-first landing pages for South African service businesses. R1650 once. Live in days.",
+    "You don't need more marketing. You need the leak found. Landora diagnoses and plugs revenue leaks across websites, paid ads, SEO, and retention for South African businesses.",
   keywords: [
-    "landing page South Africa",
-    "booking website South Africa",
-    "Cape Town web design",
-    "Johannesburg web design",
+    "digital marketing studio South Africa",
+    "leak audit",
+    "funnel audit South Africa",
     "conversion rate optimization",
-    "spa booking page",
-    "restaurant reservations landing page",
-    "barbershop booking system",
-    "physiotherapy booking page",
-    "fitness studio booking page",
-    "single link website",
+    "Cape Town digital marketing",
+    "Johannesburg digital marketing",
+    "high conversion landing page",
+    "paid ads South Africa",
+    "local SEO South Africa",
+    "booking website South Africa",
   ],
-  authors: [{ name: "Landora" }],
-  creator: "Landora",
-  publisher: "Landora",
+  authors: [{ name: "Landora Studio" }],
+  creator: "Landora Studio",
+  publisher: "Landora Studio",
   alternates: {
     canonical: "https://landora.launchgremlin.com",
   },
@@ -70,24 +69,24 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_ZA",
     url: "https://landora.launchgremlin.com",
-    siteName: "Landora",
-    title: "Landora — One link that turns lookers into bookers.",
+    siteName: "Landora Studio",
+    title: "Landora Studio — We find where you're leaking. Then we fix it.",
     description:
-      "You don't need a prettier website. You need one that closes. Single-link booking-first landing pages for South African service businesses. R1650 once.",
+      "You don't need more marketing. You need the leak found. Landora diagnoses and plugs revenue leaks across websites, paid ads, SEO, and retention for South African businesses.",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Landora — One link that turns lookers into bookers",
+        alt: "Landora Studio — We find where you're leaking. Then we fix it.",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Landora — One link that turns lookers into bookers.",
+    title: "Landora Studio — We find where you're leaking. Then we fix it.",
     description:
-      "You don't need a prettier website. You need one that closes. Single-link booking-first landing pages for South African service businesses. R1650 once.",
+      "You don't need more marketing. You need the leak found. Landora diagnoses and plugs revenue leaks across websites, paid ads, SEO, and retention for South African businesses.",
     images: ["/og-image.jpg"],
   },
   icons: {
@@ -106,13 +105,13 @@ export const metadata: Metadata = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
-  name: "Landora",
+  name: "Landora Studio",
   url: "https://landora.launchgremlin.com",
   logo: "https://landora.launchgremlin.com/landora-mark.svg",
   image: "https://landora.launchgremlin.com/og-image.jpg",
   description:
-    "Booking-first landing pages for South African service businesses. One focused link that turns lookers into bookers.",
-  priceRange: "R1650",
+    "We find where you're leaking. Then we fix it. Diagnostic leak audits and precision fixes across websites, paid ads, SEO, and retention.",
+  priceRange: "Starting from R1650",
   address: {
     "@type": "PostalAddress",
     addressCountry: "ZA",
@@ -124,17 +123,27 @@ const jsonLd = {
   },
   hasOfferCatalog: {
     "@type": "OfferCatalog",
-    name: "Single-Link Landing Page Builds",
+    name: "Studio Pipeline Leak Diagnostic & Fixes",
     itemListElement: [
       {
         "@type": "Offer",
-        name: "Single-Link Conversion Build",
+        name: "Diagnostic Pipeline Leak Audit",
+        price: "0",
+        priceCurrency: "ZAR",
+        priceValidUntil: "2026-12-31",
+        availability: "https://schema.org/InStock",
+        description:
+          "Comprehensive 100% free 4-surface diagnostic across websites, paid ads, organic search, and retention loops.",
+      },
+      {
+        "@type": "Offer",
+        name: "Studio Pipeline Fixes",
         price: "1650",
         priceCurrency: "ZAR",
         priceValidUntil: "2026-12-31",
         availability: "https://schema.org/InStock",
         description:
-          "Custom conversion-engineered single-link landing page with WhatsApp brief handoff and mobile-first speed.",
+          "Precision studio fixes starting from R1650 across websites, paid acquisition, local SEO, and customer retention.",
       },
     ],
   },
