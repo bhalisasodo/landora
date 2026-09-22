@@ -310,18 +310,6 @@ export default function FitnessStudioDemo() {
             </a>
           </div>
 
-          {/* Hero Photography Showcase */}
-          <div className="mt-12 overflow-hidden rounded-3xl border border-[#E1E5EA] bg-neutral-100 shadow-xl">
-            <div className="aspect-[16/9] w-full overflow-hidden">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="/demos/fitness.jpg"
-                alt="Forge Reformer Studio sunny morning athletic class"
-                className="h-full w-full object-cover"
-                loading="eager"
-              />
-            </div>
-          </div>
         </div>
       </header>
 

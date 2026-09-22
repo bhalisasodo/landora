@@ -167,18 +167,6 @@ export default function BarberStudioDemo() {
             </span>
           </div>
 
-          {/* Hero Photography Card */}
-          <div className="mt-12 overflow-hidden rounded-3xl border border-[#2A241A] bg-black shadow-2xl">
-            <div className="aspect-[16/9] w-full overflow-hidden">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="/demos/barber.jpg"
-                alt="The District Barber Club vintage chair and grooming station"
-                className="h-full w-full object-cover"
-                loading="eager"
-              />
-            </div>
-          </div>
         </div>
       </header>
 
