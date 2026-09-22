@@ -18,7 +18,7 @@ export default function SelfAssessment() {
 
         <ScrollReveal delay={120} className="lg:min-w-[270px]">
           <a
-            href="/api/self-assessment"
+            href="/landora-client-self-assessment.pdf"
             download="landora-client-self-assessment.pdf"
             className="group inline-flex w-full items-center justify-center gap-3 rounded-full bg-ink px-7 py-4 text-sm font-semibold tracking-tight text-cream shadow-xs transition-all duration-300 hover:bg-ink-soft hover:shadow-md sm:w-auto"
           >

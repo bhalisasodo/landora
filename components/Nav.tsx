@@ -30,8 +30,8 @@ export default function Nav() {
     <header
       className={`sticky top-0 z-50 transition-all duration-500 ease-out ${
         scrolled
-          ? "border-b border-line/60 bg-cream/85 backdrop-blur-md py-3.5"
-          : "border-b border-transparent bg-transparent py-5"
+          ? "border-b border-line/60 bg-cream/85 backdrop-blur-md py-4"
+          : "border-b border-transparent bg-transparent py-6"
       }`}
     >
       {/* Accessible Skip Link */}
@@ -45,44 +45,44 @@ export default function Nav() {
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 sm:px-8">
         <Link
           href="/"
-          className="group flex items-center gap-2.5 transition-opacity duration-300 hover:opacity-85"
+          className="group flex items-center gap-3 transition-opacity duration-300 hover:opacity-85"
           aria-label="Landora Home"
         >
           <img
             src="/landora-mark.svg"
             alt="Landora mark"
-            width={28}
-            height={28}
-            className="h-7 w-auto object-contain transition-transform duration-300 ease-out group-hover:scale-105"
+            width={36}
+            height={36}
+            className="h-9 w-auto object-contain transition-transform duration-300 ease-out group-hover:scale-105"
           />
-          <span className="font-display text-2xl font-medium tracking-tight text-ink">
+          <span className="font-display text-3xl font-medium tracking-tight text-ink">
             Landora
           </span>
         </Link>
 
-        <nav className="flex items-center gap-5 sm:gap-7">
+        <nav className="flex items-center gap-6 sm:gap-8">
           <Link
             href="#audit"
-            className="hidden font-mono text-xs font-medium uppercase tracking-[0.15em] text-ink-soft/80 transition-colors duration-300 hover:text-ink md:inline-block"
+            className="hidden font-mono text-sm font-medium uppercase tracking-[0.15em] text-ink-soft/80 transition-colors duration-300 hover:text-ink md:inline-block"
           >
             The Audit
           </Link>
           <Link
             href="#services"
-            className="hidden font-mono text-xs font-medium uppercase tracking-[0.15em] text-ink-soft/80 transition-colors duration-300 hover:text-ink sm:inline-block"
+            className="hidden font-mono text-sm font-medium uppercase tracking-[0.15em] text-ink-soft/80 transition-colors duration-300 hover:text-ink sm:inline-block"
           >
             Services
           </Link>
           <Link
             href="/demos"
-            className="hidden font-mono text-xs font-medium uppercase tracking-[0.15em] text-ink-soft/80 transition-colors duration-300 hover:text-ink sm:inline-block"
+            className="hidden font-mono text-sm font-medium uppercase tracking-[0.15em] text-ink-soft/80 transition-colors duration-300 hover:text-ink sm:inline-block"
           >
             Demos
           </Link>
           <button
             type="button"
             onClick={openDrawer}
-            className="rounded-full border border-ink/80 px-5 py-2 text-xs font-semibold tracking-tight text-ink transition-all duration-300 ease-out hover:bg-ink hover:text-cream cursor-pointer"
+            className="rounded-full border border-ink/80 px-6 py-2.5 text-sm font-semibold tracking-tight text-ink transition-all duration-300 ease-out hover:bg-ink hover:text-cream cursor-pointer"
           >
             Request Audit
           </button>
