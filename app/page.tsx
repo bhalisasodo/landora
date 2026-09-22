@@ -9,6 +9,7 @@ import Faq from "@/components/Faq";
 import Close from "@/components/Close";
 import Footer from "@/components/Footer";
 import GetStartedDrawer from "@/components/GetStartedDrawer";
+import SelfAssessment from "@/components/SelfAssessment";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Nav />
       <main id="main-content">
         <Hero />
+        <SelfAssessment />
         <Leak />
         <Audit />
         <Services />
