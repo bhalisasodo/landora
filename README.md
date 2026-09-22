@@ -2,7 +2,7 @@
 
 High-conversion, booking-first landing pages for South African local service businesses. "One link that turns lookers into bookers."
 
-- **Staging Domain:** `https://landora.launchgremlin.com`
+- **Production Domain:** `https://landora.co.za`
 - **WhatsApp Booking Line:** `060 602 1978` (`https://wa.me/27606021978`)
 - **Brand Identity:** Landora (continuous loop mark with signal green dot + Fraunces serif wordmark)
 
@@ -67,7 +67,7 @@ supposed to convert.
 - [x] Landora app icon & favicon suite (`app/icon.png`, `app/apple-icon.png`, `public/favicon.ico`)
 - [x] Real demo mockups/pages for each industry (`public/demos/` & `/demos/*`)
 - [x] WhatsApp routing configured to official line `060 602 1978` (`lib/copy.ts`)
-- [x] Staging domain mapped to `https://landora.launchgremlin.com`
+- [x] Production domain mapped to `https://landora.co.za`
 - [x] Diagnostic Leak Audit set to 100% free; fixes start from R1650 with 50% founding discount on first fix (`lib/copy.ts`)
 - [ ] Swap the pre-launch Proof section for real case studies once available post-launch
 

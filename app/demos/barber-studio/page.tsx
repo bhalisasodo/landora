@@ -97,6 +97,22 @@ export default function BarberStudioDemo() {
     <div className="min-h-screen bg-[#12100C] text-[#FAF6EE] antialiased selection:bg-[#C27803] selection:text-black">
       <DemoHeaderBar currentSlug="barber-studio" />
 
+      <nav className="border-b border-[#2A241A] bg-[#12100C] px-6 py-4" aria-label="The District Barber Club navigation">
+        <div className="mx-auto flex max-w-5xl items-center justify-between gap-6">
+          <a href="#top" className="font-mono text-sm font-bold uppercase tracking-[0.16em] text-[#FAF6EE]">
+            The District <span className="text-[#C27803]">Barber Club</span>
+          </a>
+          <div className="hidden items-center gap-6 font-mono text-[10px] uppercase tracking-[0.18em] text-[#A8A193] sm:flex">
+            <a href="#services" className="transition-colors hover:text-[#FEF08A]">Services</a>
+            <a href="#barbers" className="transition-colors hover:text-[#FEF08A]">Barbers</a>
+            <a href="#claim-voucher" className="transition-colors hover:text-[#FEF08A]">Membership</a>
+          </div>
+          <a href="#claim-voucher" className="rounded-full bg-[#C27803] px-4 py-2 font-mono text-[10px] font-bold uppercase tracking-[0.14em] text-black transition-colors hover:bg-[#D69E2E]">
+            Claim offer
+          </a>
+        </div>
+      </nav>
+
       {/* Top Ad Urgency Banner */}
       <div className="border-b border-[#2A241A] bg-[#1E1911] px-4 py-2.5 text-center text-xs font-mono">
         <div className="mx-auto flex max-w-4xl flex-wrap items-center justify-center gap-3 text-[#D69E2E]">
@@ -111,7 +127,7 @@ export default function BarberStudioDemo() {
       </div>
 
       {/* Hero Ad Offer Section */}
-      <header className="relative border-b border-[#2A241A] bg-gradient-to-b from-[#18140E] to-[#12100C] px-6 pt-12 pb-16 sm:pt-16 sm:pb-24">
+      <header id="top" className="relative border-b border-[#2A241A] bg-gradient-to-b from-[#18140E] to-[#12100C] px-6 pt-12 pb-16 sm:pt-16 sm:pb-24">
         <div className="mx-auto max-w-4xl text-center">
           {/* Top Archetype Pills */}
           <div className="flex flex-wrap items-center justify-center gap-2">
@@ -173,7 +189,7 @@ export default function BarberStudioDemo() {
       {/* Main Content Sections */}
       <main className="mx-auto max-w-4xl px-6 py-16 sm:py-24 space-y-24">
         {/* Section 1: The 4-Step Experience Breakdown */}
-        <section>
+        <section id="services">
           <div className="text-center max-w-xl mx-auto">
             <p className="font-mono text-xs font-semibold uppercase tracking-[0.2em] text-[#C27803]">
               What&apos;s Included In Your R220 Voucher
@@ -204,7 +220,7 @@ export default function BarberStudioDemo() {
         </section>
 
         {/* Section 2: Master Barber Authority */}
-        <section className="rounded-3xl border border-[#2A241A] bg-[#16130D] p-8 sm:p-12 shadow-xs">
+        <section id="barbers" className="rounded-3xl border border-[#2A241A] bg-[#16130D] p-8 sm:p-12 shadow-xs">
           <div className="text-center max-w-xl mx-auto">
             <p className="font-mono text-xs font-semibold uppercase tracking-[0.2em] text-[#C27803]">
               The Craft

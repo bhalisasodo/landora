@@ -194,7 +194,7 @@ export default function Services() {
               {/* View all demos footer link */}
               <div className="mt-6 flex flex-col sm:flex-row items-center justify-between gap-4 border-t border-line/60 pt-4">
                 <p className="font-mono text-xs text-ink-soft/70">
-                  5 live vertical builds • Mobile-native with WhatsApp instant routing
+                  3 live vertical builds • Mobile-native with WhatsApp instant routing
                 </p>
                 <Link
                   href="/demos"

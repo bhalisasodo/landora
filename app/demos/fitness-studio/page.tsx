@@ -256,8 +256,24 @@ export default function FitnessStudioDemo() {
     <div className="min-h-screen bg-[#F8F9FA] text-[#12161A] antialiased selection:bg-[#0052CC] selection:text-white">
       <DemoHeaderBar currentSlug="fitness-studio" />
 
+      <nav className="border-b border-[#E1E5EA] bg-white px-6 py-4" aria-label="Forge Reformer Pilates navigation">
+        <div className="mx-auto flex max-w-6xl items-center justify-between gap-6">
+          <a href="#top" className="font-display text-xl font-medium tracking-tight text-[#12161A]">
+            Forge <span className="text-[#0052CC]">Reformer Pilates</span>
+          </a>
+          <div className="hidden items-center gap-7 font-mono text-[10px] uppercase tracking-[0.18em] text-[#525F6E] sm:flex">
+            <a href="#schedule" className="transition-colors hover:text-[#0052CC]">Classes</a>
+            <a href="#coaches" className="transition-colors hover:text-[#0052CC]">Coaches</a>
+            <a href="#pricing" className="transition-colors hover:text-[#0052CC]">Pricing</a>
+          </div>
+          <a href="#claim-pass" className="rounded-full bg-[#0052CC] px-4 py-2 font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-white transition-colors hover:bg-[#0747A6]">
+            Book intro pass
+          </a>
+        </div>
+      </nav>
+
       {/* Hero & Authority Section */}
-      <header className="relative border-b border-[#E1E5EA] bg-white px-6 pt-12 pb-16 sm:pt-20 sm:pb-24">
+      <header id="top" className="relative border-b border-[#E1E5EA] bg-white px-6 pt-12 pb-16 sm:pt-20 sm:pb-24">
         <div className="mx-auto max-w-4xl text-center">
           {/* Top Badges */}
           <div className="flex flex-wrap items-center justify-center gap-2">
@@ -451,7 +467,7 @@ export default function FitnessStudioDemo() {
         </section>
 
         {/* Section 3: Studio Tour & Amenities */}
-        <section>
+        <section id="coaches">
           <div className="text-center max-w-2xl mx-auto">
             <p className="font-mono text-xs font-semibold uppercase tracking-[0.2em] text-[#0052CC]">
               The Space

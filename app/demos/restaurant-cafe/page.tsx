@@ -80,8 +80,24 @@ export default function RestaurantCafeDemo() {
     <div className="min-h-screen bg-[#14120F] text-[#F5F1E8] antialiased">
       <DemoHeaderBar currentSlug="restaurant-cafe" />
 
+      <nav className="border-b border-[#2C2822] bg-[#14120F] px-6 py-4" aria-label="Table 9 Bistro navigation">
+        <div className="mx-auto flex max-w-5xl items-center justify-between gap-6">
+          <a href="#top" className="font-display text-xl font-medium tracking-tight text-[#F5F1E8]">
+            Table 9 <span className="text-[#D8A76B]">Bistro</span>
+          </a>
+          <div className="hidden items-center gap-6 font-mono text-[10px] uppercase tracking-[0.18em] text-[#C4BDB0] sm:flex">
+            <a href="#menu" className="transition-colors hover:text-[#D8A76B]">Menu</a>
+            <a href="#reserve" className="transition-colors hover:text-[#D8A76B]">Reservations</a>
+            <a href="#visit" className="transition-colors hover:text-[#D8A76B]">Visit</a>
+          </div>
+          <a href="#reserve" className="rounded-full border border-[#D8A76B] px-4 py-2 font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[#D8A76B] transition-colors hover:bg-[#D8A76B] hover:text-[#14120F]">
+            Reserve a table
+          </a>
+        </div>
+      </nav>
+
       {/* Header & Hero Photography */}
-      <header className="border-b border-[#2C2822] bg-[#1A1713] px-6 pt-12 pb-10 sm:pt-16 sm:pb-14">
+      <header id="top" className="border-b border-[#2C2822] bg-[#1A1713] px-6 pt-12 pb-10 sm:pt-16 sm:pb-14">
         <div className="mx-auto max-w-xl text-center">
           <p className="font-mono text-xs font-medium uppercase tracking-[0.25em] text-[#D8A76B]">
             87 Bree Street • Cape Town CBD
@@ -123,7 +139,7 @@ export default function RestaurantCafeDemo() {
 
       <main className="mx-auto max-w-xl px-6 py-12 pb-32">
         {/* Step 1: Party Size */}
-        <section className="rounded-3xl border border-[#2C2822] bg-[#1A1713] p-6 sm:p-8 shadow-xs">
+        <section id="menu" className="rounded-3xl border border-[#2C2822] bg-[#1A1713] p-6 sm:p-8 shadow-xs">
           <div className="flex items-center justify-between">
             <h2 className="font-mono text-xs font-semibold uppercase tracking-wider text-[#D8A76B]">
               1. Party Size
@@ -156,7 +172,7 @@ export default function RestaurantCafeDemo() {
         </section>
 
         {/* Step 2: Time Slot & Seating Area */}
-        <section className="mt-8 rounded-3xl border border-[#2C2822] bg-[#1A1713] p-6 sm:p-8 shadow-xs">
+        <section id="reserve" className="mt-8 rounded-3xl border border-[#2C2822] bg-[#1A1713] p-6 sm:p-8 shadow-xs">
           <div className="flex items-center justify-between">
             <h2 className="font-mono text-xs font-semibold uppercase tracking-wider text-[#D8A76B]">
               2. Choose Seating Tonight
@@ -323,7 +339,7 @@ export default function RestaurantCafeDemo() {
         </section>
 
         {/* Chef Highlights */}
-        <section className="mt-10">
+        <section id="visit" className="mt-10">
           <h2 className="font-mono text-xs font-semibold uppercase tracking-wider text-[#9E9585]">
             Tonight's Highlights
           </h2>
