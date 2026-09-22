@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Fraunces, Inter_Tight, IBM_Plex_Mono } from "next/font/google";
+import { siteUrl } from "@/lib/site";
 import "./globals.css";
 
 const fraunces = Fraunces({
@@ -29,7 +30,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://landora.launchgremlin.com"),
+  metadataBase: new URL(siteUrl),
   title: {
     default: "Landora Studio — We find where you're leaking. Then we fix it.",
     template: "%s | Landora Studio",
@@ -52,7 +53,7 @@ export const metadata: Metadata = {
   creator: "Landora Studio",
   publisher: "Landora Studio",
   alternates: {
-    canonical: "https://landora.launchgremlin.com",
+    canonical: siteUrl,
   },
   robots: {
     index: true,
@@ -68,7 +69,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_ZA",
-    url: "https://landora.launchgremlin.com",
+    url: siteUrl,
     siteName: "Landora Studio",
     title: "Landora Studio — We find where you're leaking. Then we fix it.",
     description:
@@ -106,9 +107,9 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
   name: "Landora Studio",
-  url: "https://landora.launchgremlin.com",
-  logo: "https://landora.launchgremlin.com/landora-mark.svg",
-  image: "https://landora.launchgremlin.com/og-image.jpg",
+  url: siteUrl,
+  logo: `${siteUrl}/landora-mark.svg`,
+  image: `${siteUrl}/og-image.jpg`,
   description:
     "We find where you're leaking. Then we fix it. Diagnostic leak audits and precision fixes across websites, paid ads, SEO, and retention.",
   priceRange: "Starting from R1650",

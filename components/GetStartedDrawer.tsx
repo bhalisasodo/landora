@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { getWhatsAppUrl, pricingSection } from "@/lib/copy";
+import { contactConfig, getWhatsAppUrl, pricingSection } from "@/lib/copy";
 
 const leakOptions = [
   { id: "all", label: "Full Pipeline / Not Sure" },
@@ -263,6 +263,15 @@ export default function GetStartedDrawer() {
         <div className="mt-8 border-t border-line/60 pt-6 text-center">
           <p className="font-mono text-xs text-ink-soft/70">
             Priced in Rand (ZAR) • 100% free diagnostic audit • Fixes start from R1650
+          </p>
+          <p className="mt-3 text-xs text-ink-soft/70">
+            Prefer email?{" "}
+            <a
+              href={`mailto:${contactConfig.email}`}
+              className="font-medium text-signal underline underline-offset-4 transition-colors hover:text-ink"
+            >
+              {contactConfig.email}
+            </a>
           </p>
         </div>
       </div>

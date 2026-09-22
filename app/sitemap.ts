@@ -1,48 +1,48 @@
 import { MetadataRoute } from "next";
+import { siteUrl } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://landora.launchgremlin.com";
   const now = new Date();
 
   return [
     {
-      url: baseUrl,
+      url: siteUrl,
       lastModified: now,
       changeFrequency: "weekly",
       priority: 1.0,
     },
     {
-      url: `${baseUrl}/demos`,
+      url: `${siteUrl}/demos`,
       lastModified: now,
       changeFrequency: "weekly",
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/demos/spa-wellness`,
+      url: `${siteUrl}/demos/spa-wellness`,
       lastModified: now,
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/demos/restaurant-cafe`,
+      url: `${siteUrl}/demos/restaurant-cafe`,
       lastModified: now,
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/demos/fitness-studio`,
+      url: `${siteUrl}/demos/fitness-studio`,
       lastModified: now,
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/demos/barber-studio`,
+      url: `${siteUrl}/demos/barber-studio`,
       lastModified: now,
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/demos/physio-recovery`,
+      url: `${siteUrl}/demos/physio-recovery`,
       lastModified: now,
       changeFrequency: "monthly",
       priority: 0.8,
