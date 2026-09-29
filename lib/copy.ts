@@ -2,9 +2,9 @@
 // Single source of truth — components read from here.
 
 export const contactConfig = {
-  whatsappNumber: "27606021978",
-  whatsappDisplayNumber: "060 602 1978",
-  whatsappBaseUrl: "https://wa.me/27606021978",
+  whatsappNumber: "27768965502",
+  whatsappDisplayNumber: "076 896 5502",
+  whatsappBaseUrl: "https://wa.me/27768965502",
   email: "hello@landora.co.za",
 };
 
